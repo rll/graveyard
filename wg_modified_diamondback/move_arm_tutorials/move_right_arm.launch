@@ -1,0 +1,14 @@
+<launch>
+  <!-- load planning -->
+  <include file="$(find pr2_arm_navigation_planning)/launch/ompl_planning.launch"/>
+  <!-- load perception -->
+  <include file="$(find pr2_arm_navigation_perception)/launch/laser-perception.launch"/>
+  <!-- load filtering -->
+  <include file="$(find pr2_arm_navigation_filtering)/launch/right_arm_filter.launch"/>
+ <!-- load ik -->
+ <include file="$(find pr2_arm_navigation_kinematics)/launch/right_arm_collision_free_ik.launch"/>
+  <!-- load monitor -->
+  <include file="$(find pr2_arm_navigation_actions)/launch/environment_server_right_arm.launch"/>
+  <!-- load move_arm -->
+  <include file="$(find pr2_arm_navigation_actions)/launch/move_right_arm.launch"/>
+</launch>

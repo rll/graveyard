@@ -1,0 +1,17 @@
+<package>
+  <description brief="move_arm_tutorials">
+
+     move_arm_tutorials
+
+  </description>
+  <author>John Schulman516-348-3408516-348-3408</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/move_arm_tutorials</url>
+  <depend package="move_arm_msgs" />
+  <depend package="actionlib" />
+  
+  
+</package>
+
+
